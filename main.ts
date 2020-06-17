@@ -15,8 +15,11 @@ bluetooth.onUartDataReceived(serial.delimiters(Delimiters.NewLine), function () 
     basic.showString(uarterteke)
 })
 function szirena () {
-    for (let index = 0; index < 1065452456120451; index++) {
-    	
+    while (true) {
+        music.ringTone(988)
+        basic.pause(1000)
+        music.ringTone(784)
+        basic.pause(1000)
     }
 }
 let ajto = false
